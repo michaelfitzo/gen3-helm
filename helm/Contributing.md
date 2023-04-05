@@ -72,10 +72,10 @@ If a modification to the Helm chart is made (an update to the values.yaml file f
    name: Sheepdog
    description: A Helm chart for Kubernetes
    type: application
-   version: 0.1.1 # version updates to 0.1.1
+   version: 0.2.0 # version updates to 0.1.1
    ```
 
-Once the associated branch is merged into the main branch, the GitHub action packages and publishes an artifact, making it available for consumption. The release name is based off the 'name' field and the 'version' field in the Chart.yaml file. Given the example above, GitHub action will produce a release called `sheepdog-0.1.1`.
+Once the associated branch is merged into the main branch, the GitHub action packages and publishes an artifact, making it available for consumption. The release name is based off the 'name' field and the 'version' field in the Chart.yaml file. Given the example above, GitHub action will produce a release called `sheepdog-0.2.0`.
 
 
 ## Branch Naming Conventions
@@ -103,8 +103,6 @@ Some example commit messages:
 
 ## Pull Requests (PRs)
 
-
-To link a PR on GitHub to Jira, add its identifier `GPE-{NUMBER}` in the PR title.
 
 Before submitting a PR for review, try to make sure you’ve accomplished these things:
 
